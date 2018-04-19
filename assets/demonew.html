@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, user-scalable=0,minimal-ui" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="email=no" name="format-detection" />
+  <link rel="stylesheet" href="/p/wedding/Public/wap/static/css/wrap_common.css">
+  <link rel="stylesheet" href="/p/wedding/Public/wap/invitationCard/css/card_main.min.css?v=2018031410">
+  <link rel="stylesheet" href="//ocafkzd89.qnssl.com/animate_old_v1.0.css">
+  <link rel="stylesheet" href="//ocafkzd89.qnssl.com/animate.min_v1.0.css">
+  <link rel="stylesheet" href="//ocafkzd89.qnssl.com/animate_other_v1.0.css">
+  <link rel="stylesheet" href="/p/wedding/Public/wap/invitationCard/css/hlj_animate.css?v=20171018">
+  <link rel="icon" href="http://qnm.hunliji.com/o_1ah8sh0g58hqcgc1sfm1clv1t34c.ico" type="image/x-icon">
+
+</head>
+<body>
+<audio id="playMusic" loop></audio>
+<div class="loadmore-loading"><div></div><p></p></div>
+<script src="//ocafkzd89.qnssl.com/zepto.min_v20170710.js"></script>
+<script src="//ocafkzd89.qnssl.com/jweixin-1.0.0.js"></script>
+<script src="//ocafkzd89.qnssl.com/base64.min.js"></script>
+<script src="//ocafkzd89.qnssl.com/wxShare_new_v20170710.js"></script>
+<script src="//ocafkzd89.qnssl.com/hammer.min_v20170710.js" ></script>
+<script src="/p/wedding/Public/wap/invitationCard/js/bundle.js?v=20180402"></script>
+<script>
+  //jquery.hammer.js换成Zepto
+    (function(factory) {
+        if (typeof define === 'function' && define.amd) {
+            define(['zepto', 'hammerjs'], factory);
+        } else if (typeof exports === 'object') {
+            factory(require('zepto'), require('hammerjs'));
+        } else {
+            factory(Zepto, Hammer);
+        }
+    }(function($, Hammer) {
+        function hammerify(el, options) {
+            var $el = $(el);
+            if(!$el.data("hammer")) {
+                $el.data("hammer", new Hammer($el[0], options));
+            }
+        }
+
+        $.fn.hammer = function(options) {
+            return this.each(function() {
+                hammerify(this, options);
+            });
+        };
+
+        // extend the emit method to also trigger jQuery events
+        Hammer.Manager.prototype.emit = (function(originalEmit) {
+            return function(type, data) {
+                originalEmit.call(this, type, data);
+                $(this.element).trigger({
+                    type: type,
+                    gesture: data
+                });
+            };
+        })(Hammer.Manager.prototype.emit);
+    }));
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
