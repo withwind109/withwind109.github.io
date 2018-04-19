@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>唐超&李蕾的婚礼邀请</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="">
+    <meta id="viewport" name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no, user-scalable=0,minimal-ui"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="email=no" name="format-detection"/>
+    <link rel="stylesheet" href="/assets/wrap_common.css">
+    <link rel="stylesheet" href="/assets/card_main.min.css">
+    <link rel="stylesheet" href="/assets/animate_old_v1.0.css">
+    <link rel="stylesheet" href="/assets/animate.min_v1.0.css">
+    <link rel="stylesheet" href="/assets/animate_other_v1.0.css">
+    <link rel="stylesheet" href="/assets/hlj_animate.css">
+    <link rel="icon" href="/assets/o_1ah8sh0g58hqcgc1sfm1clv1t34c.ico" type="image/x-icon">
+</head>
+<body>
+<audio id="playMusic" loop></audio>
+<div class="loadmore-loading">
+    <div></div>
+    <p></p>
+</div>
+<script src="/assets/zepto.min_v20170710.js"></script>
+<script src="/assets/jweixin-1.0.0.js"></script>
+<script src="/assets/base64.min.js"></script>
+<script src="/assets/wxShare_new_v20170710.js"></script>
+<script src="/assets/hammer.min_v20170710.js"></script>
+<script src="/assets/bundle.js?v=20180402"></script>
+<script>
+    //jquery.hammer.js换成Zepto
+    (function (factory) {
+        if (typeof define === 'function' && define.amd) {
+            define(['zepto', 'hammerjs'], factory);
+        } else if (typeof exports === 'object') {
+            factory(require('zepto'), require('hammerjs'));
+        } else {
+            factory(Zepto, Hammer);
+        }
+    }(function ($, Hammer) {
+        function hammerify(el, options) {
+            var $el = $(el);
+            if (!$el.data("hammer")) {
+                $el.data("hammer", new Hammer($el[0], options));
+            }
+        }
+
+        $.fn.hammer = function (options) {
+            return this.each(function () {
+                hammerify(this, options);
+            });
+        };
+
+        // extend the emit method to also trigger jQuery events
+        Hammer.Manager.prototype.emit = (function (originalEmit) {
+            return function (type, data) {
+                originalEmit.call(this, type, data);
+                $(this.element).trigger({
+                    type: type,
+                    gesture: data
+                });
+            };
+        })(Hammer.Manager.prototype.emit);
+    }));
+</script>
+</body>
+</html>
