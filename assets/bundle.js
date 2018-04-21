@@ -1710,7 +1710,7 @@ boot.prototype = function () {
                                             "height": "250",
                                             "img": "../image/wmqg.png",
                                             "rotate": "",
-                                            "width": "100",
+                                            "width": "140",
                                             "x": "284",
                                             "y": "508",
                                             "z_order": "1",
