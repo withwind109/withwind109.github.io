@@ -620,7 +620,7 @@ boot.prototype = function () {
                                             "rotate": "",
                                             "width": "509",
                                             "x": "165",
-                                            "y": "81",
+                                            "y": "68",
                                             "z_order": "1",
                                             "duration": [
                                                 "2000ms"
@@ -849,15 +849,15 @@ boot.prototype = function () {
                                             "inf_delay": "",
                                             "inf_duration": "",
                                             "animate": [
-                                                "fadeInRight"
+                                                "fadeIn"
                                             ],
                                             "delay": [
-                                                "500"
+                                                "1000"
                                             ],
                                             "height": "62",
                                             "img": "http://qnm.hunliji.com/o_1c05v78an1lqb76217jvq341u1l7l.png",
                                             "rotate": "",
-                                            "width": "160",
+                                            "width": "150",
                                             "x": "500",
                                             "y": "85",
                                             "z_order": "1",
@@ -930,7 +930,7 @@ boot.prototype = function () {
                                                 "500"
                                             ],
                                             "height": "314",
-                                            "img": "http:\/\/qnm.hunliji.com\/o_1bnnr4ng31a7218dka1s1ni4qln3b.png",
+                                            "img": "../image/wmjhl.jpg",
                                             "rotate": "",
                                             "width": "59",
                                             "x": "492",
@@ -954,10 +954,10 @@ boot.prototype = function () {
                                             "delay": [
                                                 "800"
                                             ],
-                                            "height": "250",
-                                            "img": "http:\/\/qnm.hunliji.com\/o_1bnnr4pmuq5l1ds0f1sv243ea3g.png",
+                                            "height": "500",
+                                            "img": "../image/hxhn.jpg",
                                             "rotate": "",
-                                            "width": "32",
+                                            "width": "110",
                                             "x": "576",
                                             "y": "377",
                                             "z_order": "1",
@@ -967,56 +967,6 @@ boot.prototype = function () {
                                             "is_down": "0",
                                             "is_scale": "0",
                                             "id": "ele_5",
-                                            "line_spacing": ""
-                                        },
-                                        {
-                                            "infinite": "",
-                                            "inf_delay": "",
-                                            "inf_duration": "",
-                                            "animate": [
-                                                "fadeIn"
-                                            ],
-                                            "delay": [
-                                                "1000"
-                                            ],
-                                            "height": "348",
-                                            "img": "http:\/\/qnm.hunliji.com\/o_1bnnr4rv99r4tpq8e21bh85773l.png",
-                                            "rotate": "",
-                                            "width": "30",
-                                            "x": "614",
-                                            "y": "377",
-                                            "z_order": "1",
-                                            "duration": [
-                                                "2000"
-                                            ],
-                                            "is_down": "0",
-                                            "is_scale": "0",
-                                            "id": "ele_6",
-                                            "line_spacing": ""
-                                        },
-                                        {
-                                            "infinite": "",
-                                            "inf_delay": "",
-                                            "inf_duration": "",
-                                            "animate": [
-                                                "fadeIn"
-                                            ],
-                                            "delay": [
-                                                "1200"
-                                            ],
-                                            "height": "376",
-                                            "img": "http:\/\/qnm.hunliji.com\/o_1bnnr50hg1akl6qf1170nu3172n41.png",
-                                            "rotate": "",
-                                            "width": "31",
-                                            "x": "649",
-                                            "y": "375",
-                                            "z_order": "1",
-                                            "duration": [
-                                                "2000"
-                                            ],
-                                            "is_down": "0",
-                                            "is_scale": "0",
-                                            "id": "ele_7",
                                             "line_spacing": ""
                                         },
                                         {
@@ -1253,7 +1203,7 @@ boot.prototype = function () {
                                                 "fadeInRight"
                                             ],
                                             "delay": [
-                                                "500ms"
+                                                "900ms"
                                             ],
                                             "height": "145",
                                             "img": "http://qnm.hunliji.com/o_1c060iaro1cp025h1skrniv1e7b6c.png",
@@ -1278,7 +1228,7 @@ boot.prototype = function () {
                                                 "fadeIn"
                                             ],
                                             "delay": [
-                                                "1300ms"
+                                                "600ms"
                                             ],
                                             "height": "150",
                                             "img": "../image/love.png",
@@ -1619,7 +1569,7 @@ boot.prototype = function () {
                                             "inf_delay": "ms",
                                             "inf_duration": "ms",
                                             "animate": [
-                                                "fadeInLeft"
+                                                "fadeIn"
                                             ],
                                             "delay": [
                                                 "2000ms"
@@ -1655,14 +1605,14 @@ boot.prototype = function () {
                                                 "fadeInLeft"
                                             ],
                                             "delay": [
-                                                "1000"
+                                                "1500"
                                             ],
                                             "height": "49",
                                             "img": "http://qnm.hunliji.com/o_1c05uagddrun1ts1p5n1bv11vdf8t.png",
                                             "rotate": "",
                                             "width": "100",
-                                            "x": "65",
-                                            "y": "656",
+                                            "x": "62",
+                                            "y": "650",
                                             "z_order": "1",
                                             "duration": [
                                                 "2000"
@@ -1760,9 +1710,9 @@ boot.prototype = function () {
                                             "height": "250",
                                             "img": "../image/wmqg.png",
                                             "rotate": "",
-                                            "width": "76",
+                                            "width": "100",
                                             "x": "284",
-                                            "y": "474",
+                                            "y": "508",
                                             "z_order": "1",
                                             "duration": [
                                                 "2000"
@@ -1940,9 +1890,9 @@ boot.prototype = function () {
                                                 "100ms"
                                             ],
                                             "height": "31",
-                                            "img": "http:\/\/qnm.hunliji.com\/o_1bnob5li61q85ggf101gf3n131d.png",
+                                            "img": "../image/andmyt.jpg",
                                             "rotate": "",
-                                            "width": "159",
+                                            "width": "180",
                                             "x": "293",
                                             "y": "81",
                                             "z_order": "1",
@@ -2115,7 +2065,7 @@ boot.prototype = function () {
                                                 "1000ms"
                                             ],
                                             "height": "138",
-                                            "img": "http:\/\/qnm.hunliji.com\/o_1bnob7j5j1p1d12431h3cbc51gi54d.png",
+                                            "img": "../image/cx.jpg",
                                             "rotate": "",
                                             "width": "335",
                                             "x": "46",
